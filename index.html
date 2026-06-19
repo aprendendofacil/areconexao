@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Reconexão — Como Reacender o Que o Dia a Dia Apagou</title>
+<meta name="description" content="Para a mulher que ainda ama, mas se sente completamente sozinha dentro do próprio casamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"></noscript>
+
+<style>
+:root{
+  --ro:#C4879A;--ro2:#B5768A;
+  --tx:#F0E8FF;--txl:#C4A8D8;
+  --cr:#1A0F2E;--wh:#241640;
+  --brd:#3D2860;
+  --vd:#2D7D5A;--vd2:#1E6B4A;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--cr);color:var(--tx);overflow-x:hidden;font-size:17px;padding-bottom:64px;line-height:1.7}
+.wrap{width:100%;max-width:640px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* BTN */
+.btn{display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1rem;padding:17px 24px;border-radius:50px;border:none;cursor:pointer;width:100%;max-width:440px;margin:0 auto;background:var(--vd);color:#fff;box-shadow:0 5px 0 var(--vd2),0 8px 20px rgba(45,125,90,.35);animation:pulse 2.4s ease-in-out infinite;text-align:center;line-height:1.3}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--vd2)}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
+.btn-sub{text-align:center;font-size:.72rem;color:rgba(255,255,255,.5);margin-top:9px;font-weight:600}
+
+.label{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--ro);margin-bottom:12px}
+.sec-title{font-size:clamp(1.3rem,4.5vw,1.65rem);font-weight:900;color:var(--tx);line-height:1.25;margin-bottom:18px}
+.sec-title em{font-style:normal;color:var(--ro)}
+.sec{padding:36px 0}
+.sec-alt{background:var(--wh)}
+.sec-rose{background:#1E1030}
+
+/* HERO */
+.hero{background:#120B24;color:#fff;padding:44px 0 40px;text-align:center}
+.hero h1{font-size:clamp(1.65rem,5.5vw,2.2rem);font-weight:900;line-height:1.2;margin-bottom:18px;padding:0 4px}
+.hero h1 em{font-style:normal;color:var(--ro)}
+.hero-sub{font-size:.98rem;color:rgba(240,232,255,.75);line-height:1.8;font-weight:500;max-width:480px;margin:0 auto 26px}
+.hero-sub strong{color:#fff;font-weight:700}
+
+/* Projeção emocional */
+.hero-imagine{background:rgba(255,255,255,.06);border-left:3px solid var(--ro);border-radius:0 14px 14px 0;padding:16px 18px;text-align:left;font-size:.95rem;color:rgba(240,232,255,.9);line-height:1.85;font-weight:500;font-style:italic;margin-bottom:28px}
+.hero-imagine span{color:var(--ro);font-style:normal;font-weight:700}
+
+.hero-validacao{font-size:.82rem;color:rgba(196,135,154,.55);text-align:center;margin-bottom:26px;font-weight:500;line-height:1.6}
+
+/* IDENTIFICAÇÃO */
+.id-list{display:flex;flex-direction:column;gap:11px;margin-bottom:22px}
+.id-item{background:#2D1A45;border-left:4px solid #7B2D8B;border-radius:0 14px 14px 0;padding:14px 16px;font-size:.93rem;font-weight:600;line-height:1.6;color:var(--tx)}
+
+.culpa-box{background:linear-gradient(135deg,#3D1A5A,#2D1040);color:#fff;border-radius:16px;padding:20px 18px;text-align:center;font-size:.93rem;font-weight:700;line-height:1.75;border:1px solid #5A2080}
+.culpa-box em{font-style:normal;color:#E8C4D8}
+
+/* ANTES / DEPOIS */
+.antdep{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+.ad-col{border-radius:16px;padding:16px 14px}
+.ad-antes{background:#2D1A3A;border:2px solid #6B2D8B}
+.ad-depois{background:#0F2A1F;border:2px solid var(--vd)}
+.ad-label{font-weight:900;font-size:.72rem;text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+.ad-label.ant{color:var(--ro)}
+.ad-label.dep{color:var(--vd)}
+.ad-item{font-size:.8rem;font-weight:600;line-height:1.55;margin-bottom:7px;color:var(--tx)}
+.ad-item:last-child{margin-bottom:0}
+
+.pos-contraste{background:#7B2D8B;color:#fff;border-radius:16px;padding:18px;text-align:center;margin-top:16px;font-size:.93rem;font-weight:700;line-height:1.75}
+.pos-contraste em{font-style:normal;color:#E8C4D8}
+
+/* MECANISMO */
+.mec-box{background:var(--wh);border-radius:20px;padding:22px 18px;border:2px solid #5A2080;margin-top:4px}
+.mec-intro{font-size:.93rem;color:var(--txl);line-height:1.8;font-weight:500;margin-bottom:20px;font-style:italic}
+.mec-steps{display:flex;flex-direction:column;gap:16px}
+.mec-step{display:flex;align-items:flex-start;gap:13px}
+.mec-num{width:30px;height:30px;border-radius:50%;background:#7B2D8B;color:#fff;font-weight:900;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.mec-txt strong{font-size:.93rem;color:var(--tx);display:block;line-height:1.4;margin-bottom:4px}
+.mec-txt span{font-size:.84rem;color:var(--txl);line-height:1.65}
+.mec-diferencial{background:#3D1A5A;border-radius:12px;padding:14px 15px;margin-top:18px;font-size:.88rem;font-weight:700;color:var(--ro);text-align:center;line-height:1.6}
+
+/* ESCASSEZ */
+.escassez{background:var(--wh);border:1.5px solid #5A2080;border-radius:14px;padding:14px 16px;margin-bottom:18px;display:flex;align-items:flex-start;gap:12px}
+.esc-dot{width:10px;height:10px;border-radius:50%;background:var(--ro);flex-shrink:0;margin-top:6px;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.esc-txt{font-size:.84rem;color:var(--txl);font-weight:600;line-height:1.65}
+.esc-txt strong{color:var(--ro)}
+
+/* OFERTA */
+.oferta-card{background:var(--wh);border-radius:22px;border:2px solid #5A2080;box-shadow:0 6px 30px rgba(123,45,139,.2);padding:24px 20px;margin-top:8px}
+.of-titulo{font-size:1.08rem;font-weight:900;color:var(--tx);line-height:1.4;margin-bottom:16px}
+.of-ancora{background:#1E1030;border-radius:12px;padding:14px 15px;margin-bottom:18px;font-size:.88rem;color:var(--txl);line-height:1.75;font-weight:500}
+.of-ancora strong{color:var(--tx)}
+.of-preco-wrap{text-align:center;margin-bottom:6px}
+.of-de{font-size:.8rem;color:#888;text-decoration:line-through;font-weight:600;margin-bottom:3px}
+.of-preco{font-size:2.7rem;font-weight:900;color:var(--ro);line-height:1}
+.of-parcela{font-size:.74rem;color:var(--txl);font-weight:600;margin-top:4px;margin-bottom:18px;text-align:center}
+.of-justif{font-size:.82rem;color:var(--txl);font-style:italic;text-align:center;margin-bottom:20px;line-height:1.65}
+
+.nobrainer{background:linear-gradient(135deg,#3D1A5A,#2D1040);border-radius:13px;padding:15px 16px;margin-bottom:18px;text-align:center;font-size:.88rem;font-weight:700;color:var(--tx);line-height:1.75;border:1px solid #5A2080}
+.nobrainer span{color:var(--ro)}
+
+.of-gar{display:flex;align-items:center;gap:12px;background:#0F2A1F;border:1.5px solid var(--vd);border-radius:12px;padding:13px 14px;margin-top:16px}
+.of-gar-icon{font-size:1.7rem;flex-shrink:0}
+.of-gar-txt{font-size:.82rem;font-weight:700;color:var(--vd);line-height:1.55}
+
+/* PROVA SOCIAL */
+.prova-social{background:#120B24;border-radius:18px;padding:22px 18px;text-align:center;margin-bottom:22px}
+.ps-numero{font-size:2.8rem;font-weight:900;color:var(--ro);line-height:1;margin-bottom:6px}
+.ps-txt{font-size:.92rem;color:rgba(196,168,216,.85);font-weight:600;margin-bottom:10px}
+.ps-frase{font-size:1.05rem;font-weight:800;color:#fff;line-height:1.4;font-style:italic}
+
+/* REVIEWS FOTO COMPLETA */
+.reviews-grid{display:flex;flex-direction:column;gap:16px;margin-top:8px}
+.review-foto{width:100%;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.35)}
+.review-foto img{width:100%;height:auto;display:block}
+
+/* GARANTIA + CTA */
+.gar-sec{background:#120B24;color:#fff;padding:40px 0;text-align:center}
+.gar-icon{font-size:2.6rem;margin-bottom:12px}
+.gar-titulo{font-size:1.15rem;font-weight:900;color:var(--ro);margin-bottom:10px}
+.gar-txt{font-size:.93rem;color:rgba(196,168,216,.85);line-height:1.8;font-weight:500;margin-bottom:28px}
+.cta-urgencia{font-size:.72rem;color:rgba(196,168,216,.45);text-align:center;margin-top:11px;font-weight:600}
+
+/* STICKY */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--vd);padding:11px 16px;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 -3px 16px rgba(0,0,0,.3);transform:translateY(100%);transition:transform .3s ease}
+.sticky.visible{transform:translateY(0)}
+.sticky a{color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:.92rem}
+
+/* TOAST */
+.sp-toast{position:fixed;bottom:74px;left:12px;width:230px;background:#3D1A5A;color:#fff;border-radius:13px;padding:10px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 4px 20px rgba(0,0,0,.3);z-index:1000;opacity:0;transform:translateY(14px);transition:opacity .4s ease,transform .4s ease;pointer-events:none}
+.sp-toast.show{opacity:1;transform:translateY(0)}
+.sp-icon{width:28px;height:28px;border-radius:50%;background:#7B2D8B;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.8rem;font-weight:900}
+.sp-text strong{font-weight:800;font-size:.82rem;display:block;line-height:1.2}
+.sp-text span{font-size:.72rem;opacity:.82;line-height:1.3;display:block}
+.sp-close{background:none;border:none;color:rgba(255,255,255,.45);font-size:.82rem;cursor:pointer;padding:0;flex-shrink:0;margin-left:auto;line-height:1}
+
+footer{background:#120B24;color:rgba(196,168,216,.4);text-align:center;padding:18px;font-size:.68rem;line-height:1.9}
+</style>
+</head>
+<body>
+
+<!-- TOAST -->
+<div class="sp-toast" id="spToast">
+  <div class="sp-icon">✓</div>
+  <div class="sp-text">
+    <strong id="spName">Fernanda</strong>
+    <span>acabou de garantir o acesso</span>
+  </div>
+  <button class="sp-close" onclick="fecharToast()">✕</button>
+</div>
+
+<!-- ══ TELA 1: HERO ══ -->
+<section class="hero">
+  <div class="wrap">
+
+    <h1>Vocês ainda estão juntos.<br>Mas faz tempo que você<br><em>não se sente perto dele.</em></h1>
+
+    <p class="hero-sub">
+      Não tem briga. Não tem traição.<br>
+      Tem um <strong>silêncio que foi crescendo</strong> sem que ninguém percebesse.<br>
+      E você já não sabe como voltar.
+    </p>
+
+    <div class="hero-imagine">
+      Imagine voltar a ter uma conversa de verdade com ele.<br>
+      Não sobre conta, filho ou compromisso.<br>
+      Uma conversa onde você <span>se sente vista de novo.</span><br><br>
+      Esse guia existe pra te ajudar a abrir esse caminho.
+    </div>
+
+    <div class="hero-validacao">
+      Se você ama mas se sente sozinha dentro do próprio casamento — você está no lugar certo.
+    </div>
+
+    <a href="#oferta" class="btn">Quero reconectar com meu casamento</a>
+    <div class="btn-sub">acesso imediato · lê quando e onde quiser</div>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="label">Isso te soa familiar?</span>
+    <h2 class="sec-title">O que você sente mas<br><em>nunca conseguiu explicar</em></h2>
+
+    <div class="id-list">
+      <div class="id-item">Vocês jantam juntos e cada um olha pro celular. Ninguém fala nada e parece normal.</div>
+      <div class="id-item">Você quer contar algo pra ele e para na metade porque sabe que ele não vai realmente ouvir.</div>
+      <div class="id-item">Na cama vocês dormem de costas um para o outro. Não brigaram. É só assim agora.</div>
+      <div class="id-item">Às vezes você olha pra ele e sente uma saudade estranha — de alguém que ainda está ali.</div>
+      <div class="id-item">Você pensa "não tenho motivo pra reclamar" e se culpa por se sentir tão vazia assim.</div>
+    </div>
+
+    <div class="culpa-box">
+      <em>Isso não é falta de amor.</em><br>
+      É o que o dia a dia faz com todo casamento que ninguém para pra cuidar.<br>
+      <em>E tem como mudar.</em>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TELA 3: ANTES / DEPOIS ══ -->
+<section class="sec">
+  <div class="wrap">
+    <span class="label">A transformação</span>
+    <h2 class="sec-title">De onde você está<br><em>para onde pode chegar</em></h2>
+
+    <div class="antdep">
+      <div class="ad-col ad-antes">
+        <div class="ad-label ant">😔 Hoje</div>
+        <div class="ad-item">❌ Dormem juntos, se sentem distantes</div>
+        <div class="ad-item">❌ Conversas só sobre filhos e contas</div>
+        <div class="ad-item">❌ Saudade de algo que não foi embora</div>
+        <div class="ad-item">❌ Culpa por sentir o que sente</div>
+        <div class="ad-item">❌ Não sabe como começar</div>
+      </div>
+      <div class="ad-col ad-depois">
+        <div class="ad-label dep">🌿 Depois</div>
+        <div class="ad-item">✅ Voltam a ter conversas reais</div>
+        <div class="ad-item">✅ Pequenos momentos de presença</div>
+        <div class="ad-item">✅ Sente que ele a enxerga de novo</div>
+        <div class="ad-item">✅ Entende o que aconteceu sem culpa</div>
+        <div class="ad-item">✅ Sabe qual passo dar primeiro</div>
+      </div>
+    </div>
+
+    <div class="pos-contraste">
+      Reconexão não começa com uma grande conversa.<br>
+      <em>Começa com um gesto pequeno no lugar certo.</em>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MECANISMO ÚNICO ══ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="label">Por que funciona</span>
+    <h2 class="sec-title">Por que esse guia é diferente<br>de <em>tudo que você já tentou</em></h2>
+
+    <div class="mec-box">
+      <div class="mec-intro">
+        Conselho de amiga culpa alguém. Post de Instagram vende ilusão. Terapia de casal pressupõe que vocês dois estão prontos ao mesmo tempo. Esse guia começa de onde você está agora — sozinha, sem saber como abrir esse caminho.
+      </div>
+      <div class="mec-steps">
+        <div class="mec-step">
+          <div class="mec-num">1</div>
+          <div class="mec-txt">
+            <strong>Nomeia o que aconteceu</strong>
+            <span>Entender como o distanciamento se instalou silenciosamente. Sem culpa. Sem julgamento.</span>
+          </div>
+        </div>
+        <div class="mec-step">
+          <div class="mec-num">2</div>
+          <div class="mec-txt">
+            <strong>Reconecta você primeiro</strong>
+            <span>Antes de mudar o casamento, você precisa saber o que ainda quer. O guia ajuda a clarear isso.</span>
+          </div>
+        </div>
+        <div class="mec-step">
+          <div class="mec-num">3</div>
+          <div class="mec-txt">
+            <strong>Gestos pequenos que abrem caminho</strong>
+            <span>Não é sobre ter uma conversa difícil. São micro-movimentos que recriam proximidade sem pressão.</span>
+          </div>
+        </div>
+        <div class="mec-step">
+          <div class="mec-num">4</div>
+          <div class="mec-txt">
+            <strong>Sem pressionar separação nem permanência</strong>
+            <span>O guia não decide por você. Ele te dá clareza pra você decidir — com mais paz e menos medo.</span>
+          </div>
+        </div>
+      </div>
+      <div class="mec-diferencial">
+        Reconexão emocional antes de qualquer decisão.<br>
+        <strong>Esse é o único caminho que faz sentido.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TELA 4: OFERTA NO BRAINER ══ -->
+<section class="sec sec-rose" id="oferta">
+  <div class="wrap">
+    <span class="label">Sua decisão</span>
+    <h2 class="sec-title">O que seria de você<br>daqui a <em>um ano sem mudar nada?</em></h2>
+
+    <div class="escassez">
+      <div class="esc-dot"></div>
+      <div class="esc-txt">
+        Cada dia no piloto automático é mais um dia se afastando sem perceber.<br>
+        <strong>O preço promocional pode não estar disponível por muito tempo.</strong>
+      </div>
+    </div>
+
+    <div class="oferta-card">
+      <div class="of-titulo">Reconexão — Como Reacender o Que o Dia a Dia Apagou</div>
+
+      <div class="of-ancora">
+        Uma sessão de terapia de casal custa entre <strong>R$ 200 e R$ 300</strong> — e leva meses até chegar no ponto certo. Muitas vezes um dos dois nem quer ir.<br>
+        Aqui você começa sozinha, hoje, pelo seu próprio ritmo.
+      </div>
+
+      <div class="of-preco-wrap">
+        <div class="of-de">De R$ 87,00</div>
+        <div class="of-preco">R$ 37,90</div>
+      </div>
+      <div class="of-parcela">pagamento único · acesso imediato</div>
+
+      <div class="of-justif">
+        O preço é esse porque nenhuma mulher deveria ficar sozinha dentro do próprio casamento por falta de R$ 37.
+      </div>
+
+      <div class="nobrainer">
+        Por <span>R$ 37,90</span> — menos do que um jantar fora —<br>
+        você entende o que aconteceu, para de se culpar<br>
+        e dá o primeiro passo real em direção a ele.<br>
+        <span>Se não ajudar, a gente devolve tudo.</span>
+      </div>
+
+      <a href="COLE_AQUI_LINK_CHECKOUT" class="btn">Quero reconectar com meu casamento</a>
+      <div style="text-align:center;font-size:.72rem;color:var(--txl);margin-top:9px;font-weight:600">Pix · Cartão · Boleto &nbsp;|&nbsp; Acesso imediato</div>
+
+      <div class="of-gar">
+        <span class="of-gar-icon">🛡️</span>
+        <div class="of-gar-txt">Garantia de 7 dias. Não ajudou? A gente devolve 100%, sem perguntar o motivo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TELA 5: DEPOIMENTOS ══ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="label">Quem já passou por isso</span>
+    <h2 class="sec-title">Mensagens de mulheres<br><em>que sentiram o mesmo que você</em></h2>
+
+    <div class="prova-social">
+      <div class="ps-numero">+5.200</div>
+      <div class="ps-txt">mulheres já escolheram reconectar.</div>
+      <div class="ps-frase">A próxima pode ser você.</div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-foto">
+        <img src="COLE_AQUI_LINK_FOTO_1" alt="Review 1" loading="lazy">
+      </div>
+      <div class="review-foto">
+        <img src="COLE_AQUI_LINK_FOTO_2" alt="Review 2" loading="lazy">
+      </div>
+      <div class="review-foto">
+        <img src="COLE_AQUI_LINK_FOTO_3" alt="Review 3" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA + CTA FINAL -->
+<section class="gar-sec">
+  <div class="wrap">
+    <div class="gar-icon">🛡️</div>
+    <div class="gar-titulo">Garantia de 7 dias</div>
+    <p class="gar-txt">
+      Se você ler e sentir que não ajudou,<br>
+      a gente devolve tudo. Sem formulário,<br>
+      sem explicação, sem burocracia.<br>
+      Você não tem nada a perder.
+    </p>
+    <a href="#oferta" class="btn">Quero dar esse primeiro passo</a>
+    <div class="cta-urgencia">acesso imediato · lê no celular, tablet ou computador</div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 · Produto 100% digital.</p>
+  <p>Este material tem caráter informativo e não substitui acompanhamento profissional.</p>
+  <p style="margin-top:6px">
+    <a href="#" style="color:rgba(255,255,255,.22);text-decoration:underline">Política de Privacidade</a> ·
+    <a href="#" style="color:rgba(255,255,255,.22);text-decoration:underline">Termos de Uso</a>
+  </p>
+</footer>
+
+<div class="sticky" id="stickyBar">
+  <a href="#oferta">Quero reconectar com meu casamento</a>
+</div>
+
+<script>
+var sticky=document.getElementById('stickyBar');
+var hero=document.querySelector('.hero');
+function checkSticky(){
+  if(hero.getBoundingClientRect().bottom<0){sticky.classList.add('visible')}
+  else{sticky.classList.remove('visible')}
+}
+window.addEventListener('scroll',checkSticky,{passive:true});
+
+(function(){
+  var nomes=['Fernanda','Márcia','Cláudia','Patricia','Simone','Adriana','Luciana','Renata','Cristiane','Juliana','Sandra','Viviane','Carla','Beatriz','Mônica','Tatiane','Débora','Amanda','Raquel','Vanessa','Carolina','Fabiana','Letícia','Priscila','Ana Paula','Mariana','Thais','Regina','Eliane','Rosana'];
+  var toast=document.getElementById('spToast');
+  var spName=document.getElementById('spName');
+  var ativo=false,usados=[];
+  function proximoNome(){
+    if(usados.length>=nomes.length)usados=[];
+    var disp=nomes.filter(function(n){return usados.indexOf(n)===-1});
+    var n=disp[Math.floor(Math.random()*disp.length)];
+    usados.push(n);return n;
+  }
+  function mostrar(){
+    if(ativo)return;ativo=true;
+    spName.textContent=proximoNome();
+    toast.classList.add('show');
+    setTimeout(esconder,4000);
+  }
+  function esconder(){toast.classList.remove('show');ativo=false;}
+  window.fecharToast=esconder;
+  window.fecharToast=esconder;
+  setTimeout(function(){
+    mostrar();
+    function prox(){var d=(Math.random()*5000)+15000;setTimeout(function(){mostrar();prox();},d);}
+    prox();
+  },6000);
+})();
+</script>
+</body>
+</html>
