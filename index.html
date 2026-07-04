@@ -17,6 +17,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Reconexão — Como Reacender o Que o Dia a Dia Apagou</title>
 <meta name="description" content="Para a mulher que ainda ama, mas se sente completamente sozinha dentro do próprio casamento.">
+
+<!-- Preload da imagem hero — carrega antes de tudo -->
+<link rel="preload" as="image" href="https://github.com/aprendendofacil/areconexao/blob/main/capa.png?raw=true">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
@@ -66,27 +70,39 @@ img{max-width:100%;display:block}
 .sec-escura .bloco-p strong,
 .sec-oferta .bloco-p strong{color:#fff}
 
-/* BLOCO 1: DOR */
-.frase-ancora{font-size:clamp(1.55rem,5.5vw,2.1rem);font-weight:900;line-height:1.2;color:#F0E8FF;text-align:center;padding:46px 0 12px}
+/* ── BLOCO 1: DOR ── */
+.frase-ancora{font-size:clamp(1.55rem,5.5vw,2.1rem);font-weight:900;line-height:1.2;color:#F0E8FF;text-align:center;padding:40px 0 10px}
 .frase-ancora em{font-style:normal;color:var(--ro);display:block}
-.frase-sub{font-size:.98rem;color:rgba(240,232,255,.78);text-align:center;line-height:1.85;font-weight:500;padding:0 0 32px}
+.frase-sub{font-size:.95rem;color:rgba(240,232,255,.78);text-align:center;line-height:1.85;font-weight:500;padding:10px 0 20px}
 .frase-sub strong{color:#fff}
-.frase-impacto{font-size:1.02rem;font-weight:700;color:#F0E8FF;font-style:italic;line-height:1.8;border-left:3px solid var(--ro);padding-left:16px;margin:20px 0}
 
-/* BLOCO 2: DESCOBERTA */
+/* IMAGEM DO PRODUTO — bloco 1 (LCP) */
+.produto-hero{width:100%;max-width:320px;margin:0 auto 24px;border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.45);border:2px solid rgba(196,135,154,.3)}
+.produto-hero img{width:100%;height:auto;display:block}
+
+/* Mini social proof abaixo da imagem */
+.mini-prova{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.mini-prova-stars{color:#F5B800;font-size:.95rem;letter-spacing:1px}
+.mini-prova-txt{font-size:.78rem;color:rgba(196,168,216,.8);font-weight:600}
+.mini-prova-sep{color:rgba(196,168,216,.3);font-size:.8rem}
+
+.frase-impacto{font-size:1rem;font-weight:700;color:#F0E8FF;font-style:italic;line-height:1.8;border-left:3px solid var(--ro);padding-left:16px;margin:4px 0 28px}
+
+/* ── BLOCO 2: DESCOBERTA ── */
 .id-lista{display:flex;flex-direction:column;gap:0;margin:20px 0}
-.id-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(42,18,64,.1);font-size:.95rem;font-weight:600;color:#1A0A2E;line-height:1.6}
+.id-item{display:flex;align-items:flex-start;gap:14px;padding:15px 0;border-bottom:1px solid rgba(42,18,64,.1);font-size:.93rem;font-weight:600;color:#1A0A2E;line-height:1.6}
 .id-item:last-child{border-bottom:none}
-.id-num{font-weight:900;font-size:1.1rem;color:var(--ro);flex-shrink:0;width:24px;margin-top:1px}
+.id-num{font-weight:900;font-size:1.1rem;color:var(--ro);flex-shrink:0;width:22px;margin-top:1px}
 
-/* BLOCO 3: EXPLICAÇÃO */
+/* ── BLOCO 3: EXPLICAÇÃO ── */
 .narrativa{background:#F0EAF8;border-radius:18px;padding:22px 20px;margin:20px 0}
 .narrativa-titulo{font-size:.7rem;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--ro);margin-bottom:14px}
 .narrativa p{font-size:.93rem;color:#4A3A6A;line-height:1.85;font-weight:500;margin-bottom:12px}
 .narrativa p:last-child{margin-bottom:0}
 .narrativa p strong{color:#1A0A2E}
+.frase-impacto-escura{font-size:1rem;font-weight:700;color:#F0E8FF;font-style:italic;line-height:1.8;border-left:3px solid var(--ro);padding-left:16px;margin:20px 0}
 
-/* BLOCO 4: CONSEQUÊNCIA */
+/* ── BLOCO 4: CONSEQUÊNCIA ── */
 .antdep{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
 .ad-col{border-radius:16px;padding:18px 14px}
 .ad-antes{background:#2D1A3A;border:2px solid #6B2D8B}
@@ -99,7 +115,7 @@ img{max-width:100%;display:block}
 .frase-virada{background:var(--roxo);color:#fff;border-radius:16px;padding:20px 18px;text-align:center;margin-top:16px;font-size:.97rem;font-weight:700;line-height:1.75}
 .frase-virada em{font-style:normal;color:#E8C4D8}
 
-/* BLOCO 5: SOLUÇÃO */
+/* ── BLOCO 5: SOLUÇÃO ── */
 .mec-intro{font-size:.95rem;color:rgba(196,168,216,.9);line-height:1.85;font-weight:500;margin-bottom:24px}
 .mec-steps{display:flex;flex-direction:column;gap:20px;margin:20px 0}
 .mec-step{display:flex;align-items:flex-start;gap:14px}
@@ -111,13 +127,17 @@ img{max-width:100%;display:block}
 .ponte-sub{font-size:.86rem;color:rgba(196,168,216,.85);line-height:1.7}
 .ponte-sub em{font-style:normal;color:var(--ro);font-weight:700}
 
-/* TRANSIÇÃO */
-.transicao{text-align:center;padding:32px 0 8px}
+/* ── BLOCO 6: TRANSIÇÃO + IMAGEM PRODUTO ── */
+.transicao{text-align:center;padding:28px 0 8px}
 .trans-titulo{font-size:1.1rem;font-weight:900;color:#1A0A2E;margin-bottom:10px;line-height:1.35}
 .trans-sub{font-size:.9rem;color:#4A3A6A;line-height:1.75;font-weight:500}
 
+/* Imagem produto na transição */
+.produto-transicao{width:100%;max-width:280px;margin:24px auto 0;border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(42,18,64,.18);border:2px solid rgba(196,135,154,.2)}
+.produto-transicao img{width:100%;height:auto;display:block}
+
 /* PROVA SOCIAL */
-.prova-social{background:#2A1240;border-radius:18px;padding:22px 18px;text-align:center;margin-bottom:22px}
+.prova-social{background:#2A1240;border-radius:18px;padding:22px 18px;text-align:center;margin-bottom:22px;margin-top:28px}
 .ps-numero{font-size:2.8rem;font-weight:900;color:var(--ro);line-height:1;margin-bottom:6px}
 .ps-txt{font-size:.92rem;color:rgba(196,168,216,.85);font-weight:600;margin-bottom:10px}
 .ps-frase{font-size:1.05rem;font-weight:800;color:#fff;line-height:1.4;font-style:italic}
@@ -127,16 +147,23 @@ img{max-width:100%;display:block}
 .review-foto{width:100%;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.15)}
 .review-foto img{width:100%;height:auto;display:block}
 
-/* ESCASSEZ */
+/* ── ESCASSEZ ── */
 .escassez{background:rgba(255,255,255,.06);border:1.5px solid rgba(196,135,154,.35);border-radius:14px;padding:14px 16px;margin-bottom:20px;display:flex;align-items:flex-start;gap:12px}
 .esc-dot{width:10px;height:10px;border-radius:50%;background:var(--ro);flex-shrink:0;margin-top:7px;animation:blink 2s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .esc-txt{font-size:.84rem;color:rgba(196,168,216,.9);font-weight:600;line-height:1.65}
 .esc-txt strong{color:var(--ro);font-weight:800}
 
-/* OFERTA */
+/* ── OFERTA ── */
 .oferta-card{background:#FFFFFF;border-radius:22px;border:2px solid #5A2080;box-shadow:0 6px 30px rgba(123,45,139,.2);padding:26px 20px;margin-top:16px}
-.of-titulo{font-size:1rem;font-weight:900;color:#1A0A2E;line-height:1.45;margin-bottom:16px}
+
+/* Imagem dentro do card de oferta */
+.of-produto-wrap{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.of-produto-img{width:90px;height:auto;border-radius:10px;flex-shrink:0;box-shadow:0 4px 16px rgba(42,18,64,.2)}
+.of-produto-info{flex:1}
+.of-titulo{font-size:.96rem;font-weight:900;color:#1A0A2E;line-height:1.4;margin-bottom:4px}
+.of-subtag{font-size:.7rem;font-weight:700;color:var(--roxo);text-transform:uppercase;letter-spacing:.8px}
+
 .of-ancora{background:#2A1240;border-radius:12px;padding:14px 15px;margin-bottom:18px;font-size:.88rem;color:rgba(196,168,216,.9);line-height:1.75;font-weight:500}
 .of-ancora strong{color:#F0E8FF}
 .of-preco-wrap{text-align:center;margin-bottom:6px}
@@ -150,7 +177,7 @@ img{max-width:100%;display:block}
 .of-gar-icon{font-size:1.7rem;flex-shrink:0}
 .of-gar-txt{font-size:.82rem;font-weight:700;color:var(--vd);line-height:1.55}
 
-/* GARANTIA FINAL */
+/* ── GARANTIA FINAL ── */
 .gar-sec{background:#2A1240;color:#fff;padding:40px 0;text-align:center}
 .gar-icon{font-size:2.6rem;margin-bottom:12px}
 .gar-titulo{font-size:1.15rem;font-weight:900;color:var(--ro);margin-bottom:10px}
@@ -163,30 +190,56 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 <body>
 
 <!-- ══════════════════════════════════
-     BLOCO 1 — DOR
-     Ela para porque se sentiu vista
+     BLOCO 1 — DOR + IMAGEM DO PRODUTO
+     Quebra o muro de texto no ponto de ruptura
 ══════════════════════════════════ -->
 <section class="sec sec-escura">
   <div class="wrap">
+
     <div class="frase-ancora">
       Você ainda ama.<br>
       <em>Mas faz tempo que não se sente perto dele.</em>
     </div>
+
     <p class="frase-sub">
       Não tem briga. Não tem traição.<br>
-      Tem um <strong>silêncio que foi crescendo</strong> sem que ninguém percebesse.<br>
-      E você já não sabe como voltar.
+      Tem um <strong>silêncio que foi crescendo</strong> sem que ninguém percebesse.
     </p>
+
+    <!-- IMAGEM DO PRODUTO — LCP, sem lazy, fetchpriority high -->
+    <div class="produto-hero">
+      <img
+        src="https://github.com/aprendendofacil/areconexao/blob/main/1.png?raw=true"
+        alt="Reconexão — Guia de reconexão emocional"
+        fetchpriority="high"
+        width="320"
+        height="320">
+    </div>
+
+    <!-- Mini prova social logo abaixo da imagem -->
+    <div class="mini-prova">
+      <span class="mini-prova-stars">★★★★★</span>
+      <span class="mini-prova-txt">+5.200 mulheres</span>
+      <span class="mini-prova-sep">·</span>
+      <span class="mini-prova-txt">acesso imediato</span>
+      <span class="mini-prova-sep">·</span>
+      <span class="mini-prova-txt">garantia 7 dias</span>
+    </div>
+
     <div class="frase-impacto">
       "Não tenho motivo pra reclamar."<br>
       Se você já pensou isso sobre o seu casamento, continue lendo.
     </div>
+
+    <a href="#oferta" class="btn">Quero reconectar com meu casamento</a>
+    <div class="btn-sub">acesso imediato · lê quando e onde quiser</div>
+
   </div>
 </section>
 
 <!-- ══════════════════════════════════
      BLOCO 2 — DESCOBERTA
-     Ela se reconhece em cada item
+     Checklist reduzido para 4 itens mais impactantes
 ══════════════════════════════════ -->
 <section class="sec sec-card">
   <div class="wrap">
@@ -196,10 +249,8 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
     <div class="id-lista">
       <div class="id-item"><span class="id-num">1</span>Vocês jantam juntos e cada um olha pro celular. Ninguém fala nada e parece normal.</div>
       <div class="id-item"><span class="id-num">2</span>Você quer contar algo pra ele e para na metade porque sabe que ele não vai realmente ouvir.</div>
-      <div class="id-item"><span class="id-num">3</span>Na cama vocês dormem de costas um pro outro. Não brigaram. É só assim agora.</div>
-      <div class="id-item"><span class="id-num">4</span>Às vezes você olha pra ele e sente uma saudade estranha de alguém que ainda está ali.</div>
-      <div class="id-item"><span class="id-num">5</span>Você pensa "não tenho motivo pra reclamar" e se culpa por se sentir tão vazia assim.</div>
-      <div class="id-item"><span class="id-num">6</span>Você ainda ama. Mas não sabe mais como chegar até ele.</div>
+      <div class="id-item"><span class="id-num">3</span>Às vezes você olha pra ele e sente uma saudade estranha de alguém que ainda está ali.</div>
+      <div class="id-item"><span class="id-num">4</span>Você pensa "não tenho motivo pra reclamar" e se culpa por se sentir tão vazia assim.</div>
     </div>
 
     <p class="bloco-p" style="margin-top:16px">Se você se viu em dois ou mais, o que você está vivendo tem nome. E não é fraqueza sua.</p>
@@ -208,7 +259,6 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 
 <!-- ══════════════════════════════════
      BLOCO 3 — EXPLICAÇÃO
-     Educa sem soar como palestra
 ══════════════════════════════════ -->
 <section class="sec sec-escura">
   <div class="wrap">
@@ -225,7 +275,7 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
       <p>Esse é o ciclo. E ele se sustenta exatamente porque é difícil de ver de dentro.</p>
     </div>
 
-    <div class="frase-impacto">
+    <div class="frase-impacto-escura">
       Você não está exagerando.<br>
       Você está vivendo algo que tem nome. E tem saída.
     </div>
@@ -234,7 +284,6 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 
 <!-- ══════════════════════════════════
      BLOCO 4 — CONSEQUÊNCIA
-     Custo de não fazer nada
 ══════════════════════════════════ -->
 <section class="sec sec-media">
   <div class="wrap">
@@ -254,7 +303,7 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
       <div class="ad-col ad-depois">
         <span class="ad-label dep">🌿 Com reconexão</span>
         <div class="ad-item">✅ Voltam a conversar de verdade</div>
-        <div class="ad-item">✅ Pequeños gestos que aproximam</div>
+        <div class="ad-item">✅ Pequenos gestos que aproximam</div>
         <div class="ad-item">✅ Ele começa a te enxergar de novo</div>
         <div class="ad-item">✅ Você para de se culpar</div>
         <div class="ad-item">✅ Sabe qual passo dar primeiro</div>
@@ -270,7 +319,6 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 
 <!-- ══════════════════════════════════
      BLOCO 5 — SOLUÇÃO
-     O método como resposta natural
 ══════════════════════════════════ -->
 <section class="sec sec-escura">
   <div class="wrap">
@@ -317,8 +365,7 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 </section>
 
 <!-- ══════════════════════════════════
-     BLOCO 6 — TRANSIÇÃO NATURAL
-     Da leitura para a compra sem pressão
+     BLOCO 6 — TRANSIÇÃO + 2ª IMAGEM DO PRODUTO
 ══════════════════════════════════ -->
 <section class="sec sec-card">
   <div class="wrap">
@@ -327,7 +374,17 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
       <p class="trans-sub" style="margin-top:10px">A maioria das mulheres continua carregando isso em silêncio por anos. Você não precisa ser uma delas.</p>
     </div>
 
-    <div class="prova-social" style="margin-top:28px">
+    <!-- 2ª aparição da imagem — âncora visual antes da prova social -->
+    <div class="produto-transicao">
+      <img
+        src="https://github.com/aprendendofacil/areconexao/blob/main/2.png?raw=true"
+        alt="Reconexão — Guia"
+        loading="lazy"
+        width="280"
+        height="280">
+    </div>
+
+    <div class="prova-social">
       <div class="ps-numero">+5.200</div>
       <div class="ps-txt">mulheres já escolheram reconectar.</div>
       <div class="ps-frase">A próxima pode ser você.</div>
@@ -348,8 +405,7 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
 </section>
 
 <!-- ══════════════════════════════════
-     BLOCO 7 — OFERTA
-     A compra como consequência natural
+     BLOCO 7 — OFERTA com imagem no card
 ══════════════════════════════════ -->
 <section class="sec sec-oferta" id="oferta">
   <div class="wrap">
@@ -365,7 +421,20 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
     </div>
 
     <div class="oferta-card">
-      <div class="of-titulo">Reconexão. Como Reacender o Que o Dia a Dia Apagou</div>
+
+      <!-- Imagem + título lado a lado no card -->
+      <div class="of-produto-wrap">
+        <img
+          class="of-produto-img"
+          src="https://github.com/aprendendofacil/areconexao/blob/main/1.png?raw=true"
+          alt="Reconexão"
+          loading="lazy"
+          width="90">
+        <div class="of-produto-info">
+          <div class="of-subtag">Acesso imediato</div>
+          <div class="of-titulo">Reconexão. Como Reacender o Que o Dia a Dia Apagou</div>
+        </div>
+      </div>
 
       <div class="of-ancora">
         Uma sessão de terapia de casal custa entre <strong>R$ 200 e R$ 300</strong> e leva meses até chegar no ponto certo. Muitas vezes um dos dois nem quer ir.<br>
@@ -421,8 +490,8 @@ footer{background:#2A1240;color:rgba(196,168,216,.4);text-align:center;padding:1
   <p>© 2025 · Produto 100% digital.</p>
   <p>Este material tem caráter informativo e não substitui acompanhamento profissional.</p>
   <p style="margin-top:6px">
-    <a href="#" style="color:rgba(255,255,255,.22);text-decoration:underline">Política de Privacidade</a> ·
-    <a href="#" style="color:rgba(255,255,255,.22);text-decoration:underline">Termos de Uso</a>
+    <a href="privacidade.html" style="color:rgba(255,255,255,.35);text-decoration:underline">Política de Privacidade</a> ·
+    <a href="termos.html" style="color:rgba(255,255,255,.35);text-decoration:underline">Termos de Uso</a>
   </p>
 </footer>
 
