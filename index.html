@@ -55,13 +55,12 @@ img{max-width:100%;display:block}
 .sec-escura .bloco-p strong{color:#fff}
 .sec-escura .bloco-titulo{color:#F0E8FF}
 
-/* BLOCO 1 — HEADLINE SOBRE IMAGEM DE FUNDO (estilo referência) */
-.hero{position:relative;min-height:86vh;display:flex;flex-direction:column;background-image:url('https://github.com/aprendendofacil/areconexao/blob/main/hero.png?raw=true');background-size:cover;background-position:top center;overflow:hidden}
+/* BLOCO 1 — HEADLINE SOBRE IMAGEM DE FUNDO */
+.hero{position:relative;min-height:86vh;display:flex;flex-direction:column;background-image:url('https://raw.githubusercontent.com/aprendendofacil/areconexao/main/hero.png');background-size:cover;background-position:top center;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,8,32,.90) 0%,rgba(20,8,32,.60) 28%,rgba(20,8,32,.05) 55%,rgba(20,8,32,.45) 100%)}
 .hero-conteudo{position:relative;z-index:2;padding:48px 24px 0;text-align:center}
 .hero-h1{font-size:clamp(1.5rem,6vw,2.15rem);font-weight:900;line-height:1.25;color:#fff;margin-bottom:14px;max-width:480px;margin-left:auto;margin-right:auto}
 .hero-sub{font-size:1rem;color:rgba(255,255,255,.9);font-weight:600;line-height:1.7;max-width:440px;margin:0 auto}
-/* Tamanho ideal da imagem: ver nota de especificação no final do arquivo */
 
 /* BLOCO 2 — DEPOIMENTOS */
 .depo-grid{display:flex;flex-direction:column;gap:44px;margin-top:24px}
@@ -144,14 +143,8 @@ img{max-width:100%;display:block}
 
 /* BLOCO 13 — AUTORIDADE */
 .autor-box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;margin-top:20px}
-.autor-foto{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--ro),var(--roxo));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.4rem}
-/* Trocar .autor-foto por <img> real quando tiver a imagem da Marcela/avatar */
-<style>
-/* Adicionar isso perto da seção de CSS do BLOCO 13, substituindo .autor-foto */
 .autor-foto{width:180px;height:180px;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(59,20,80,.18)}
 .autor-foto img{width:100%;height:100%;object-fit:cover;display:block}
-</style>
-
 
 /* BLOCO 14 — SELOS */
 .selos{display:flex;justify-content:space-between;gap:10px;margin-top:8px}
@@ -170,8 +163,6 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
     <div class="hero-sub">Se o silêncio depois da briga dura mais do que a própria briga, isso tem explicação e tem saída.</div>
   </div>
 </section>
-<!-- TROCAR o background-image da .hero no CSS pela foto do casal (a que você já aprovou) -->
-<!-- Tamanho ideal: ver especificação completa no comentário no final do arquivo -->
 
 <!-- ══════ BLOCO 2 — DEPOIMENTOS ══════ -->
 <section class="sec sec-clara">
@@ -179,7 +170,7 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
     <h2 class="bloco-titulo" style="text-align:center">O que mulheres reais<br><em>estão vivendo agora.</em></h2>
     <div class="depo-grid">
       <div class="depo-card">
-        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m1.jpg?raw=true" alt="Renata, 36 anos"></div>
+        <div class="depo-foto-grande"><img src="https://raw.githubusercontent.com/aprendendofacil/areconexao/main/m1.jpg" alt="Renata, 36 anos"></div>
         <div class="depo-popup">
           <div class="depo-stars">★★★★★</div>
           <div class="depo-txt">"Depois de meses sem trocar mais que 'oi', a gente voltou a conversar de verdade. Ele que puxou assunto primeiro."</div>
@@ -187,7 +178,7 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
         </div>
       </div>
       <div class="depo-card">
-        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m2.jpg?raw=true" alt="Camila, 41 anos"></div>
+        <div class="depo-foto-grande"><img src="https://raw.githubusercontent.com/aprendendofacil/areconexao/main/m2.jpg" alt="Camila, 41 anos"></div>
         <div class="depo-popup">
           <div class="depo-stars">★★★★★</div>
           <div class="depo-txt">"Eu tinha certeza que já não tinha mais volta. Em duas semanas ele já estava diferente comigo."</div>
@@ -195,15 +186,14 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
         </div>
       </div>
       <div class="depo-card">
-        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m3.jpg?raw=true" alt="Juliana, 29 anos"></div>
+        <div class="depo-foto-grande"><img src="https://raw.githubusercontent.com/aprendendofacil/areconexao/main/m3.jpg" alt="Juliana, 29 anos"></div>
         <div class="depo-popup">
           <div class="depo-stars">★★★★★</div>
-          <div class="depo-txt">"Meu casamento estava desmoronando, pouco tempo de casada e ja me via divorciada,agora meu casamento e maravilhoso graças a Deus"</div>
+          <div class="depo-txt">"Meu casamento estava desmoronando, pouco tempo de casada e já me via divorciada. Agora meu casamento é maravilhoso, graças a Deus."</div>
           <div class="depo-autor">Juliana, 29 anos</div>
         </div>
       </div>
     </div>
-    <!-- SUBSTITUIR pelos depoimentos reais -->
   </div>
 </section>
 
@@ -315,9 +305,8 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
 
     <div class="oferta-card">
       <div class="of-produto-mockup">
-        <img src="https://github.com/aprendendofacil/areconexao/blob/main/1.png?raw=true" alt="Reconexão, Método completo">
+        <img src="https://raw.githubusercontent.com/aprendendofacil/areconexao/main/1.png" alt="Reconexão, Método completo">
       </div>
-      <!-- SUBSTITUIR por uma imagem que tangibilize o produto: ex. celular/tablet mostrando o conteúdo, ou capa do guia -->
 
       <div class="of-ancora">
         Uma sessão de terapia de casal custa entre <strong>R$200 e R$300</strong> e leva meses até chegar no ponto certo. Muitas vezes um dos dois nem quer ir.<br>
@@ -396,7 +385,7 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
     <h2 class="bloco-titulo" style="text-align:center">Quem está por trás<br><em>do Reconexão.</em></h2>
     <div class="autor-box">
       <div class="autor-foto">
-        <img src="https://github.com/aprendendofacil/areconexao/blob/main/Captura%20de%20tela%202026-07-08%20220056.jpg?raw=true" alt="Marcela Diniz">
+        <img src="https://raw.githubusercontent.com/aprendendofacil/areconexao/main/Captura%20de%20tela%202026-07-08%20220056.jpg" alt="Marcela Diniz">
       </div>
       <p class="bloco-p" style="text-align:center">O Reconexão nasceu do acompanhamento de milhares de conversas reais com mulheres passando pelo mesmo momento: briga, ameaça de separação, silêncio que não sabe mais como quebrar. Marcela Diniz reúne esses padrões e conduz cada mulher, no seu ritmo, pelos passos que fazem a diferença.</p>
     </div>
