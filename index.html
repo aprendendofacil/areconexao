@@ -146,6 +146,12 @@ img{max-width:100%;display:block}
 .autor-box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;margin-top:20px}
 .autor-foto{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--ro),var(--roxo));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.4rem}
 /* Trocar .autor-foto por <img> real quando tiver a imagem da Marcela/avatar */
+<style>
+/* Adicionar isso perto da seção de CSS do BLOCO 13, substituindo .autor-foto */
+.autor-foto{width:180px;height:180px;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(59,20,80,.18)}
+.autor-foto img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+
 
 /* BLOCO 14 — SELOS */
 .selos{display:flex;justify-content:space-between;gap:10px;margin-top:8px}
@@ -330,7 +336,7 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
       </div>
       <div class="of-parcela">pagamento único · acesso imediato</div>
 
-      <div class="of-justif">Por R$29,90, menos do que uma pizza no delivery, você entende o que está acontecendo, para de andar em ovos dentro de casa e dá o primeiro passo real para sair do silêncio.</div>
+      <div class="of-justif">Por R$29,90, menos do que uma pizza no delivery, você entende o que está acontecendo, para de pisar em ovos dentro de casa e dá o primeiro passo real para sair do silêncio.</div>
 
       <a href="#" class="btn">Quero reconectar com meu casamento</a>
       <div style="text-align:center;font-size:.72rem;color:var(--txl);margin-top:9px;font-weight:600">Pix · Cartão · Boleto &nbsp;|&nbsp; Acesso imediato</div>
@@ -389,8 +395,9 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
   <div class="wrap">
     <h2 class="bloco-titulo" style="text-align:center">Quem está por trás<br><em>do Reconexão.</em></h2>
     <div class="autor-box">
-      <div class="autor-foto">MD</div>
-      <!-- trocar por <img src="https://github.com/aprendendofacil/areconexao/blob/main/Captura%20de%20tela%202026-07-08%20220056.jpg?raw=true"> quando tiver -->
+      <div class="autor-foto">
+        <img src="https://github.com/aprendendofacil/areconexao/blob/main/Captura%20de%20tela%202026-07-08%20220056.jpg?raw=true" alt="Marcela Diniz">
+      </div>
       <p class="bloco-p" style="text-align:center">O Reconexão nasceu do acompanhamento de milhares de conversas reais com mulheres passando pelo mesmo momento: briga, ameaça de separação, silêncio que não sabe mais como quebrar. Marcela Diniz reúne esses padrões e conduz cada mulher, no seu ritmo, pelos passos que fazem a diferença.</p>
     </div>
   </div>
@@ -410,7 +417,7 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
 <!-- ══════ BLOCO 15 — REFORÇO FINAL ══════ -->
 <section class="sec sec-escura" style="text-align:center">
   <div class="wrap">
-    <h2 class="bloco-titulo">Você não precisa continuar<br><em>andando em ovos dentro da sua própria casa.</em></h2>
+    <h2 class="bloco-titulo">Você não precisa continuar<br><em>pisando em ovos dentro da sua própria casa.</em></h2>
     <div style="font-size:2rem;font-weight:900;color:var(--ro);margin:10px 0">R$29,90</div>
     <div class="bloco-p" style="text-align:center">acesso imediato · garantia de 7 dias</div>
     <a href="#oferta" class="btn">Quero reconectar com meu casamento</a>
