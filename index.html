@@ -55,22 +55,23 @@ img{max-width:100%;display:block}
 .sec-escura .bloco-p strong{color:#fff}
 .sec-escura .bloco-titulo{color:#F0E8FF}
 
-/* BLOCO 1 — HEADLINE ACIMA + IMAGEM ABAIXO (igual à referência) */
-.hero-topo{background:var(--cr);padding:52px 24px 28px;text-align:center}
-.hero-h1{font-size:clamp(1.5rem,6vw,2.15rem);font-weight:900;line-height:1.25;color:var(--tx);margin-bottom:14px;max-width:520px;margin-left:auto;margin-right:auto}
-.hero-sub{font-size:1rem;color:var(--txl);font-weight:600;line-height:1.7;max-width:460px;margin:0 auto}
-.hero-img-full{width:100%;line-height:0}
-.hero-img-full img{width:100%;height:auto;display:block;object-fit:cover}
+/* BLOCO 1 — HEADLINE SOBRE IMAGEM DE FUNDO (estilo referência) */
+.hero{position:relative;min-height:86vh;display:flex;flex-direction:column;background-image:url('https://github.com/aprendendofacil/areconexao/blob/main/hero.png?raw=true');background-size:cover;background-position:top center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,8,32,.90) 0%,rgba(20,8,32,.60) 28%,rgba(20,8,32,.05) 55%,rgba(20,8,32,.45) 100%)}
+.hero-conteudo{position:relative;z-index:2;padding:48px 24px 0;text-align:center}
+.hero-h1{font-size:clamp(1.5rem,6vw,2.15rem);font-weight:900;line-height:1.25;color:#fff;margin-bottom:14px;max-width:480px;margin-left:auto;margin-right:auto}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.9);font-weight:600;line-height:1.7;max-width:440px;margin:0 auto}
 /* Tamanho ideal da imagem: ver nota de especificação no final do arquivo */
 
 /* BLOCO 2 — DEPOIMENTOS */
-.depo-grid{display:flex;flex-direction:column;gap:16px;margin-top:24px}
-.depo-card{background:var(--wh);border-radius:16px;padding:20px 18px 22px;box-shadow:0 4px 20px rgba(59,20,80,.08);border:1px solid rgba(123,45,139,.08);text-align:center}
-.depo-stars{color:#F5B800;font-size:.9rem;margin-bottom:10px;letter-spacing:1px}
-.depo-txt{font-size:.9rem;font-style:italic;color:var(--tx);line-height:1.7;margin-bottom:16px;text-align:left}
-.depo-foto{width:64px;height:64px;border-radius:50%;overflow:hidden;margin:0 auto 10px;border:2px solid var(--ro)}
-.depo-foto img{width:100%;height:100%;object-fit:cover;display:block}
-.depo-autor{font-size:.8rem;font-weight:800;color:var(--roxo)}
+.depo-grid{display:flex;flex-direction:column;gap:44px;margin-top:24px}
+.depo-card{position:relative}
+.depo-foto-grande{width:100%;aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:0 6px 20px rgba(59,20,80,.15)}
+.depo-foto-grande img{width:100%;height:100%;object-fit:cover;display:block}
+.depo-popup{position:relative;z-index:2;background:var(--roxo-esc);border-radius:16px;padding:18px 18px 16px;margin:-36px 14px 0;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.depo-stars{color:#F5B800;font-size:.85rem;margin-bottom:8px;letter-spacing:1px}
+.depo-txt{font-size:.88rem;font-style:italic;color:#fff;line-height:1.7;margin-bottom:10px;text-align:left}
+.depo-autor{font-size:.8rem;font-weight:800;color:var(--ro)}
 
 /* BLOCO 3 — NÚMERO PROVA SOCIAL */
 .prova-numero{text-align:center;padding:8px 0}
@@ -107,6 +108,8 @@ img{max-width:100%;display:block}
 
 /* BLOCO 9 — OFERTA */
 .oferta-card{background:var(--wh);border-radius:22px;border:2px solid var(--roxo);box-shadow:0 6px 30px rgba(123,45,139,.15);padding:28px 22px;margin-top:20px}
+.of-produto-mockup{width:100%;text-align:center;margin-bottom:22px}
+.of-produto-mockup img{max-width:260px;width:100%;margin:0 auto;display:block}
 .of-ancora{background:var(--roxo-esc);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:.87rem;color:rgba(240,232,255,.9);line-height:1.75}
 .of-ancora strong{color:#fff}
 .of-bonus-lista{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
@@ -154,14 +157,14 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
 </head>
 <body>
 
-<!-- ══════ BLOCO 1 — HEADLINE + SUBHEADLINE ACIMA, IMAGEM ABAIXO ══════ -->
-<section class="hero-topo">
-  <div class="hero-h1">Vocês brigaram. Ele ameaçou terminar.<br>E agora ninguém sabe mais o que dizer.</div>
-  <div class="hero-sub">Se o silêncio depois da briga dura mais do que a própria briga, isso tem explicação e tem saída.</div>
+<!-- ══════ BLOCO 1 — HEADLINE SOBRE IMAGEM DE FUNDO ══════ -->
+<section class="hero">
+  <div class="hero-conteudo">
+    <div class="hero-h1">Vocês brigaram. Ele ameaçou terminar.<br>E agora ninguém sabe mais o que dizer.</div>
+    <div class="hero-sub">Se o silêncio depois da briga dura mais do que a própria briga, isso tem explicação e tem saída.</div>
+  </div>
 </section>
-<div class="hero-img-full">
-  <img src="https://github.com/aprendendofacil/areconexao/blob/main/hero.png?raw=true" alt="Reconexão" width="1200" height="1500">
-</div>
+<!-- TROCAR o background-image da .hero no CSS pela foto do casal (a que você já aprovou) -->
 <!-- Tamanho ideal: ver especificação completa no comentário no final do arquivo -->
 
 <!-- ══════ BLOCO 2 — DEPOIMENTOS ══════ -->
@@ -170,22 +173,28 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
     <h2 class="bloco-titulo" style="text-align:center">O que mulheres reais<br><em>estão vivendo agora.</em></h2>
     <div class="depo-grid">
       <div class="depo-card">
-        <div class="depo-stars">★★★★★</div>
-        <div class="depo-txt">"Depois de meses sem trocar mais que 'oi', a gente voltou a conversar de verdade. Ele que puxou assunto primeiro."</div>
-        <div class="depo-foto"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m1.jpg?raw=true" alt="Renata, 36 anos"></div>
-        <div class="depo-autor">Renata, 36 anos</div>
+        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m1.jpg?raw=true" alt="Renata, 36 anos"></div>
+        <div class="depo-popup">
+          <div class="depo-stars">★★★★★</div>
+          <div class="depo-txt">"Depois de meses sem trocar mais que 'oi', a gente voltou a conversar de verdade. Ele que puxou assunto primeiro."</div>
+          <div class="depo-autor">Renata, 36 anos</div>
+        </div>
       </div>
       <div class="depo-card">
-        <div class="depo-stars">★★★★★</div>
-        <div class="depo-txt">"Eu tinha certeza que já não tinha mais volta. Em duas semanas ele já estava diferente comigo."</div>
-        <div class="depo-foto"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m2.jpg?raw=true" alt="Camila, 41 anos"></div>
-        <div class="depo-autor">Camila, 41 anos</div>
+        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m2.jpg?raw=true" alt="Camila, 41 anos"></div>
+        <div class="depo-popup">
+          <div class="depo-stars">★★★★★</div>
+          <div class="depo-txt">"Eu tinha certeza que já não tinha mais volta. Em duas semanas ele já estava diferente comigo."</div>
+          <div class="depo-autor">Camila, 41 anos</div>
+        </div>
       </div>
       <div class="depo-card">
-        <div class="depo-stars">★★★★★</div>
-        <div class="depo-txt">"Parei de me culpar por sentir falta de alguém que ainda mora comigo. Isso mudou tudo."</div>
-        <div class="depo-foto"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m3.jpg?raw=true" alt="Juliana, 29 anos"></div>
-        <div class="depo-autor">Juliana, 29 anos</div>
+        <div class="depo-foto-grande"><img src="https://github.com/aprendendofacil/areconexao/blob/main/m3.jpg?raw=true" alt="Juliana, 29 anos"></div>
+        <div class="depo-popup">
+          <div class="depo-stars">★★★★★</div>
+          <div class="depo-txt">"Meu casamento estava desmoronando, pouco tempo de casada e ja me via divorciada,agora meu casamento e maravilhoso graças a Deus"</div>
+          <div class="depo-autor">Juliana, 29 anos</div>
+        </div>
       </div>
     </div>
     <!-- SUBSTITUIR pelos depoimentos reais -->
@@ -299,6 +308,11 @@ footer{background:var(--roxo-esc);color:rgba(240,232,255,.4);text-align:center;p
     <h2 class="bloco-titulo" style="text-align:center">Tudo isso por<br><em>menos do que você imagina.</em></h2>
 
     <div class="oferta-card">
+      <div class="of-produto-mockup">
+        <img src="https://github.com/aprendendofacil/areconexao/blob/main/1.png?raw=true" alt="Reconexão, Método completo">
+      </div>
+      <!-- SUBSTITUIR por uma imagem que tangibilize o produto: ex. celular/tablet mostrando o conteúdo, ou capa do guia -->
+
       <div class="of-ancora">
         Uma sessão de terapia de casal custa entre <strong>R$200 e R$300</strong> e leva meses até chegar no ponto certo. Muitas vezes um dos dois nem quer ir.<br>
         Aqui você começa sozinha, hoje, no seu próprio ritmo.
